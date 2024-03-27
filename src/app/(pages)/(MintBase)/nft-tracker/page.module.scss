@@ -1,0 +1,84 @@
+.mainPage {
+  background-color: #f7f7f7;
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  position: relative;
+
+  .header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(250 250 250/1);
+    border-bottom: 1px solid rgb(234 234 234/1);
+    margin: 0px 15px;
+
+    .title {
+      color: black;
+      font-size: 26px;
+      font-weight: 500;
+      line-height: 28px;
+    }
+  }
+
+  .bannerSection {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 35px;
+    padding: 3rem 0px;
+
+    .bannerTitle {
+      color: black;
+      font-size: 42px;
+      line-height: 44px;
+      font-weight: 600;
+    }
+
+    .bannerDesc {
+      max-width: 500px;
+      color: black;
+      font-size: 20px;
+      font-weight: 400;
+    }
+  }
+
+  .nftTrackersContainer {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 45px;
+
+    .analyticsContainer {
+      width: 1000px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 30px 30px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      border-radius: 12px;
+      gap: 30px;
+
+      .salesVolumeCount {
+        font-size: 50px;
+        font-weight: 600;
+        line-height: 72px;
+        color: black;
+      }
+      .text {
+        font-size: 26px;
+        font-weight: 500;
+        line-height: 28px;
+        color: black;
+      }
+    }
+  }
+}
