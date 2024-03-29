@@ -1,16 +1,16 @@
 import { gql } from "@apollo/client";
 
-export const getAirSwapLights = gql`
+export const getCryptoPunksNft = gql`
   query {
-      swapLights(first: 3, orderDirection: desc, orderBy: timestamp) {
-        timestamp
-        from
-        to
-        value
-        signerAmount
-        senderAmount
-        signerFee
-      }
+    punkTransfers(first: 10, orderBy: blockNumber, orderDirection: desc) {
+      punkIndex
+      to
+      from
+      transactionHash
+      id
+      blockNumber
+      blockTimestamp
+    }
   }
 `;
 
