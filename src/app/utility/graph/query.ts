@@ -2,7 +2,7 @@ import { gql } from "@apollo/client";
 
 export const getCryptoPunksNft = gql`
   query {
-    punkTransfers(first: 10, orderBy: blockNumber, orderDirection: desc) {
+    punkTransfers(first: 50, orderBy: blockNumber, orderDirection: desc) {
       punkIndex
       to
       from

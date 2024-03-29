@@ -77,8 +77,8 @@ const ExplorerSubgraph = () => {
           >
             <img
               className={styles.nftImage}
-              // src={generateRandomNumber()}
-              src={`./images/punk${index}.webp`}
+              src={generateRandomNumber()}
+              // src={`./images/punk${index}.webp`}
               alt=""
               width={226}
               height={226}

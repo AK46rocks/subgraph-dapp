@@ -1,5 +1,15 @@
-import styles from "./page.module.css";
+"use client";
+import ExplorerSubgraph from "@/app/_components/ExplorerSubgraph";
+import createApolloClient from "@/app/lib/apolloClient";
+import { ApolloProvider } from "@apollo/client";
 
 export default function Home() {
-  return <main className={styles.main}></main>;
+  const client = createApolloClient();
+  return (
+    <>
+      <ApolloProvider client={client}>
+        <ExplorerSubgraph />
+      </ApolloProvider>
+    </>
+  );
 }
